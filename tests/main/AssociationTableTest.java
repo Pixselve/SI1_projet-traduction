@@ -6,6 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class AssociationTableTest {
 
+//  Test file
   @Test
   void addElement() {
 //    Test the length
