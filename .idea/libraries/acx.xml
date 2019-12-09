@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="acx">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/acx.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/libs/acx.jar!/" />
+    </SOURCES>
+  </library>
+</component>
