@@ -10,7 +10,6 @@ public class Search {
   public static int standardSearch(String[] arr, String el) {
     for (int i = 0; i < arr.length; i++) {
       if (arr[i].toLowerCase().equals(el.toLowerCase())) return i;
-
     }
     return -1;
   }

@@ -91,27 +91,36 @@ public class AssociationTable {
 
 
   /**
-   * Get the value associated to a key is the Association Table by using standard search (See class Search)
+   * Get the value associated to a key in the Association Table by using standard search (See class Search)
    *
    * @param key The key of the element
    * @return The value associated to the key
    */
   String getElement(String key) {
     int searchIndex = Search.standardSearch(this.keys, key);
-    return searchIndex >= 0 ? this.values[searchIndex] : key;
+    return searchIndex >= 0 ? this.values[searchIndex] : "";
   }
 
   /**
-   * Get the value associated to a key is the Association Table by using dichotomous search (See class Search)
+   * Get the value associated to a key in the Association Table by using dichotomous search (See class Search)
    *
    * @param key The key of the element
    * @return The value associated to the key
    */
   String getElementAdvanced(String key) {
     int searchIndex = Search.advancedSearch(this.keys, key);
-    return searchIndex >= 0 ? this.values[searchIndex] : key;
+    return searchIndex >= 0 ? this.values[searchIndex] : "";
   }
-
+  /**
+   * Get the index value associated to a key in the Association Table by using dichotomous search (See class Search)
+   *
+   * @param key The key of the element
+   * @return The index of the value in the table, associated to the key
+   */
+  int getIndexElementAdvanced(String key) {
+    int searchIndex = Search.advancedSearch(this.keys, key);
+    return searchIndex;
+  }
 
   /**
    * @return The length of the Association Table
